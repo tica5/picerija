@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>Meow Pizzeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("pizza.jpg");
+    height: 100%;
+}
+</style>
+<body>
+
+<div class="w3-top w3-hide-medium">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="meni">POČETNA</a>
+    <a href="#menu" class="meni">MENI</a>
+    <a href="#about" class="meni">O NAMA</a>
+    <a href="#contact" class="meni">KONTAKT</a>
+  </div>
+</div>
+  
+<header class="bgimg w3-display-container w3-grayscale-min" id="početna">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Radnim danima od 10.00 do 24.00 h</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-big" style="font-size:100px">MEOW PIZZERIA</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>meow pizzeria</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Pogledaj meni</a></p>
+  </div>
+</header>
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENI</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pice</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pića');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pića</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Palačinke');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Palačinke</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Capricciosa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">550 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela, praška šunka, šampinjoni</p>
+      <hr>
+   
+      <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">500 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela</p>
+      <hr>
+      
+      <h1><b>Pileća</b> <span class="w3-right w3-tag w3-dark-grey w3-round">800 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela, pile, luk</p>
+      <hr>
+
+      <h1><b>Vegeterijana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">900 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela, šampinjoni, masline, paprika čeri, luk</p>
+      <hr>
+
+      <h1><b>Calzona</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">950 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela, praška šunka, šampinjoni, pavlaka</p>
+      <hr>
+
+      <h1><b>Mediteran</b> <span class="w3-tag w3-grey w3-round">Novo</span><span class="w3-right w3-tag w3-dark-grey w3-round">950 din.</span></h1>
+      <p class="w3-text-grey">Paradajz, mocarela, inćuni</p>
+    </div>
+
+    <div id="Pića" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Koka kola</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round">100 din.</span></h1>
+      <hr>
+   
+      <h1><b>Fanta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100 din.</span></h1>
+      <hr>
+      
+      <h1><b>Limunada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">110 din.</span></h1>
+      <hr>
+
+      <h1><b>Cedjena pomorandza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120 din.</span></h1>
+    </div>
+
+
+    <div id="Palačinke" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mala slatka</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">150 din.</span></h1>
+      <p class="w3-text-grey">Plazma, eurokrem</p>
+      <hr>
+   
+      <h1><b>Velika slatka</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200 din.</span></h1>
+      <p class="w3-text-grey">Plazma eurokrem</p>
+      <hr>
+      
+      <h1><b>Nutela</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250 din.</span></h1>
+      <p class="w3-text-grey">Plazma, nutela</p>
+      <hr>
+      
+      <h1><b>Slatka sa šlagom</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250 din.</span></h1>
+      <p class="w3-text-grey">Plazma, eurokrem, šlag</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">O nama</h1>
+    <p>Mi smo novi restoran koji je otvoren sa ciljem da vam ulepšamo dan.</p>
+    <img src="picerija1.jpg" style="width:50%" class="w3-margin-top w3-margin-bottom" alt="Picerija">
+    <h1><b>Radno vreme</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Ponedeljak 10.00 - 24.00</p>
+        <p>Utorak 10.00 - 24.00</p>
+        <p>Sreda 10.00 - 24.00</p>
+        <p>Cetvrtak 10.00-24.00</p>
+        <p>Petak 10.00-24.00</p>
+        <p>Vikendom ne radimo</p>
+      </div>
+      <div class="w3-col s6">
+       
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Kontakt</h1>
+    <p>Možete nas dobiti na broj 0649745582 ili 065979168</p>
+    <p class="w3-xxlarge"><strong>Rezervišite</strong> sto </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Ime" required name="Ime"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Broj osoba" required name="Broj ljudi"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Datum i vreme" required name="date" value="2017-11-16T20:00"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">POšALJI PORUKU</button></p>
+    </form>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+ <p>Meow Pizzeria</p>
+</footer>
+
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>
